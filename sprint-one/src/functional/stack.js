@@ -3,10 +3,8 @@ var Stack = function(){
     len: 0
   };
 
-  // Use an object with numeric keys to store values
   var storage = {};
 
-  // Implement the methods below
   someInstance.push = function(value){
     storage[someInstance.len] = value;
     someInstance.len++;
