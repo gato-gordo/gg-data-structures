@@ -15,10 +15,10 @@ var Queue = function(){
 
   someInstance.dequeue = function(){
 
-    var dequed, len = someInstance.len;
+    var dequeued, len = someInstance.len;
     if(len){
       var i = 0;
-      dequed = storage[i];
+      dequeued = storage[i];
       while(i < len - 1){
         storage[i] = storage[i + 1];
         i++;
@@ -26,7 +26,7 @@ var Queue = function(){
       delete storage[len - 1];
       someInstance.len--;
     }
-    return dequed;
+    return dequeued;
   };
 
   someInstance.size = function(){
