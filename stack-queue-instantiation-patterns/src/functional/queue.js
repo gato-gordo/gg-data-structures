@@ -3,10 +3,7 @@ var Queue = function(){
     len: 0
   };
 
-  // Use an object with numeric keys to store values
   var storage = {};
-
-  // Implement the methods below
 
   someInstance.enqueue = function(value){
     storage[someInstance.len] = value;
